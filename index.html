@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; media-src *" />
+    
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile.theme-1.4.5.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <title>GitHub RepoFinder</title>
+</head>
+
+<body>
+    <div class="app">
+        <div data-role="page">
+            <header data-role="header">
+                <h1>Repofinder</h1>
+            </header>
+        
+            <div data-role="content">
+                <form>
+                    <input id="search-input" type="search" data-type="search" placeholder="Search by user..." name="">
+                    <button type="button" id="search-btn" name="">Search</button>
+                </form>
+
+                <div id="user-info"></div>
+                <ul id="search-list" data-role="listview" ></ul>
+                <br>
+                <h3>Latest Repos</h3>
+                <form class="ui-filterabel">
+                    <input type="text" data-type="search" id="filter-basic-input" placeholder="Filter items....">
+
+                </form>
+                <ul id="repo-list" data-role="listview" data-filter="true" data-input="#filter-basic-input">
+                    <li>
+                        <img class="thumbnail" src="https://previews.customer.envatousercontent.com/files/35951991/80x80.JPG">
+                        <h1><a href="">Repo Name</a></h1>
+                        <p>By Saleem Castle</p>
+                    </li>
+                    <li>
+                        <img class="thumbnail" src="https://previews.customer.envatousercontent.com/files/35951991/80x80.JPG">
+                        <h1><a href="">Repo Name</a></h1>
+                        <p>By Saleem Castle</p>
+                    </li>
+                    <li>
+                        <img class="thumbnail" src="https://previews.customer.envatousercontent.com/files/35951991/80x80.JPG">
+                        <h1><a href="">Repo Name</a></h1>
+                        <p>By Saleem Castle</p>
+                    </li>
+                </ul>
+            </div>
+
+            <footer data-role="footer">
+                <h3>Copyright &copy; 2019</h3>
+            </footer>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    
+    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+</body>
+
+</html>
